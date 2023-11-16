@@ -18,24 +18,26 @@ export default {
 </script>
 
 <template>
-    <header class="container d-flex justify-content-between align-items-center">
-        <a href="#">
-            <img class="logo" :src="'/' + header.logoSrc" alt="">
-        </a>
-        <nav class="d-flex">
-            <a class="nav-item d-flex" v-for="item in header.navItems" :key="item" href="#">
-                <span>{{ item }}</span>
-                <font-awesome-icon icon="fa-solid fa-chevron-down" />
+    <header class="page-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#">
+                <img class="logo" :src="'/' + header.logoSrc" alt="">
             </a>
-        </nav>
-        <SocialIcons :icons="icons" />
+            <nav class="d-flex">
+                <a class="nav-item d-flex" v-for="item in header.navItems" :key="item" href="#">
+                    {{ item }}
+                    <font-awesome-icon icon="fa-solid fa-chevron-down" />
+                </a>
+            </nav>
+            <SocialIcons :icons="icons" />
+        </div>
     </header>
 </template>
 
 <style scoped lang="scss">
 @import '../styles/partials/variables';
 
-header.container {
+.page-header .container {
     padding: 28px 0;
 }
 

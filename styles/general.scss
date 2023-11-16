@@ -44,3 +44,7 @@ li {
 .align-items-center {
     align-items: center;
 }
+
+.col-6 {
+    flex-basis: calc((100%/12)*6);
+}

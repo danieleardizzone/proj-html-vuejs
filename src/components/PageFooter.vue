@@ -18,14 +18,58 @@ export default {
 </script>
 
 <template>
-    <footer class="container">
-        <div class="address">
-            <p>Address</p>
-            <p>{{ footer.contacts.address }}</p>
-            <p>{{ footer.contacts.phoneNumber }}</p>
-            <p>{{ footer.contacts.emailAddress }}</p>
-            <SocialIcons :icons="icons" />
+    <footer>
+        <div class="container d-flex">
+            <div class="address col-6">
+                <h3>Address</h3>
+                <ul>
+                    <li>
+                        {{ footer.contacts.address }}
+                    </li>
+                    <li>
+                        {{ footer.contacts.phoneNumber }}
+                    </li>
+                    <li>
+                        {{ footer.contacts.emailAddress }}
+                    </li>
+                    <li>
+                        <SocialIcons :icons="icons" />
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex">
+                <div class="site-map">
+                    <h3>Explore</h3>
+                    <div class="list-wrapper d-flex">
+                        <ul>
+                            <li v-for="section in footer.map.column1">
+                                <a href="#">
+                                    {{ section }}
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li v-for="section in footer.map.column2">
+                                <a href="#">
+                                    {{ section }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="information">
+                    <h3>Information</h3>
+                    <ul>
+                        <li v-for="item in footer.information">
+                            <a href="#">
+                                {{ item }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <p class="copyright">&copy; All Rights <span>not</span> Reserved</p>
     </footer>
 </template>
 
@@ -35,5 +79,38 @@ export default {
 footer {
     color: $footer-txt;
     background-color: $footer-bg;
+    line-height: 36px;
+}
+
+.container {
+    padding: 70px 0;
+}
+
+h3 {
+    color: $white;
+    font-size: 18px;
+}
+
+ul {
+    font-size: 15px;
+}
+
+.address+div {
+    gap: 75px;
+
+    .site-map .list-wrapper {
+        gap: 68px;
+    }
+}
+
+.copyright {
+    text-align: center;
+    padding: 55px 0;
+    font-size: 15px;
+
+    span {
+        font-weight: bold;
+        color: red;
+    }
 }
 </style>
