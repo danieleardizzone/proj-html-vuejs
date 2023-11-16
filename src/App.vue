@@ -19,9 +19,11 @@ export default {
 </script>
 
 <template>
-  <PageHeader :header="this.store.header" :icons="this.store.icons" />
+  <div class="wavify-bg">
+    <PageHeader :header="this.store.header" :icons="this.store.icons" />
 
-  <PageHero />
+    <PageHero />
+  </div>
 
   <PageFooter :footer="this.store.footer" :icons="this.store.icons" />
 </template>
@@ -30,8 +32,14 @@ export default {
 @use './styles/general.scss';
 </style>
 
-<style scoped>
+<style scoped lang="scss">
+@import 'styles/partials/variables';
+
 * {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: $sans-serif;
+}
+
+.wavify-bg {
+  background-image: url('/background-pattern-wavify.png');
 }
 </style>
