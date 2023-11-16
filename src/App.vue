@@ -3,12 +3,14 @@ import { store } from './store.js'
 
 import PageHeader from './components/PageHeader.vue'
 import PageHero from './components/PageHero.vue'
+import Statistics from './components/Statistics.vue'
 import PageFooter from './components/PageFooter.vue'
 
 export default {
   components: {
     PageHeader,
     PageHero,
+    Statistics,
     PageFooter,
   }, data() {
     return {
@@ -24,6 +26,8 @@ export default {
 
     <PageHero />
   </div>
+
+  <Statistics />
 
   <PageFooter :footer="this.store.footer" :icons="this.store.icons" />
 </template>

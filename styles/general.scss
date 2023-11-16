@@ -53,6 +53,10 @@ li {
     flex-direction: column;
 }
 
+.col-3 {
+    flex-basis: calc((100%/12)*3);
+}
+
 .col-6 {
     flex-basis: calc((100%/12)*6);
 }
