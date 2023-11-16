@@ -21,7 +21,7 @@ export default {
     <footer>
         <div class="container d-flex">
             <div class="address col-6">
-                <h3>Address</h3>
+                <h4>Address</h4>
                 <ul>
                     <li>
                         {{ footer.contacts.address }}
@@ -39,7 +39,7 @@ export default {
             </div>
             <div class="col-6 d-flex">
                 <div class="site-map">
-                    <h3>Explore</h3>
+                    <h4>Explore</h4>
                     <div class="list-wrapper d-flex">
                         <ul>
                             <li v-for="section in footer.map.column1">
@@ -58,7 +58,7 @@ export default {
                     </div>
                 </div>
                 <div class="information">
-                    <h3>Information</h3>
+                    <h4>Information</h4>
                     <ul>
                         <li v-for="item in footer.information">
                             <a href="#">
@@ -86,7 +86,7 @@ footer {
     padding: 70px 0;
 }
 
-h3 {
+h4 {
     color: $white;
     font-size: 18px;
 }

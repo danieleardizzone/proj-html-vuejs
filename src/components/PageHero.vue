@@ -30,11 +30,6 @@
 
 .text {
     gap: 25px;
-
-    h1 {
-        font-family: $serif;
-        font-weight: bold;
-    }
 }
 
 .image {

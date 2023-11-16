@@ -64,6 +64,21 @@ li {
 h1 {
     font-size: 48px;
     line-height: 75px;
+    font-family: $serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 60px;
+    font-family: $serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 19px;
+    line-height: 33px;
+    font-weight: bold;
 }
 
 p {
