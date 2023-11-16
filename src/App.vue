@@ -5,6 +5,7 @@ import PageHeader from './components/PageHeader.vue'
 import PageHero from './components/PageHero.vue'
 import Statistics from './components/Statistics.vue'
 import AboutMe from './components/AboutMe.vue'
+import LatestCourses from './components/LatestCourses.vue'
 import PageFooter from './components/PageFooter.vue'
 
 export default {
@@ -13,6 +14,7 @@ export default {
     PageHero,
     Statistics,
     AboutMe,
+    LatestCourses,
     PageFooter,
   }, data() {
     return {
@@ -32,6 +34,8 @@ export default {
   <Statistics />
 
   <AboutMe />
+
+  <LatestCourses />
 
   <PageFooter :footer="this.store.footer" :icons="this.store.icons" />
 </template>

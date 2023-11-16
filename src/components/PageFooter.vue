@@ -77,7 +77,7 @@ export default {
 @import '../styles/partials/variables';
 
 footer {
-    color: $footer-txt;
+    color: $gray;
     background-color: $footer-bg;
     line-height: 36px;
 }

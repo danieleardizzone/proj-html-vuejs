@@ -4,7 +4,7 @@
     <div class="container">
         <div class="hero d-flex">
             <div class="text col-6 d-flex dir-column justify-content-center">
-                <h6>I'M WINGMAN</h6>
+                <p class="sec-title">I'M WINGMAN</p>
                 <h1>Peace on Earth A Wonderful Wish But No Way</h1>
                 <p>Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.
                 </p>

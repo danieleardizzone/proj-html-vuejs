@@ -37,7 +37,6 @@
 @import '../styles/partials/variables';
 
 .sec-title {
-    font-weight: bold;
     color: $green;
 }
 
