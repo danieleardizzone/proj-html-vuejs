@@ -136,12 +136,6 @@
     }
 }
 
-.price {
-    color: $green;
-    font-weight: bold;
-    font-size: 24px;
-}
-
 .card-footer {
     margin-bottom: 40px;
 

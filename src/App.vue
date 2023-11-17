@@ -7,6 +7,7 @@ import Statistics from './components/Statistics.vue'
 import AboutMe from './components/AboutMe.vue'
 import LatestCourses from './components/LatestCourses.vue'
 import PageFooter from './components/PageFooter.vue'
+import BookStore from './components/BookStore.vue'
 
 export default {
   components: {
@@ -15,6 +16,7 @@ export default {
     Statistics,
     AboutMe,
     LatestCourses,
+    BookStore,
     PageFooter,
   }, data() {
     return {
@@ -36,6 +38,8 @@ export default {
   <AboutMe />
 
   <LatestCourses />
+
+  <BookStore />
 
   <PageFooter :footer="this.store.footer" :icons="this.store.icons" />
 </template>
